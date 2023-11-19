@@ -8,26 +8,39 @@
 syntax reset
 let g:colors_name="neonabyss"
 
-hi LineNr ctermfg=240 cterm=NONE
+hi Normal       ctermfg=7   ctermbg=16 cterm=none
 
-hi Normal     ctermfg=7 ctermbg=16 cterm=NONE
-hi Statement  ctermfg=201 cterm=bold
-"maybe 165
+hi LineNr       ctermfg=240 cterm=none
+hi CursorLine               ctermbg=234 cterm=none
+hi CursorLineNr ctermfg=46  ctermbg=234 cterm=bold
 
-hi Type       ctermfg=69 cterm=italic
-"maybe 33
+hi SpecialKey   ctermfg=41
+hi NonText      ctermfg=41
 
-hi Constant   ctermfg=74
-"maybe 161
+hi ModeMsg      ctermfg=46  cterm=bold
+hi StatusLine   ctermfg=16  ctermbg=41 cterm=bold
+hi StatusLineNC ctermfg=244 ctermbg=16
+hi VertSplit    ctermfg=244 ctermbg=16
 
-hi PreProc    ctermfg=168
-hi Identifier ctermfg=221 cterm=NONE
-hi Operator   ctermfg=197 cterm=bold
-"244
-hi Comment    ctermfg=244
-hi Special    ctermfg=168
+hi Visual       ctermfg=16  ctermbg=41 cterm=none
 
-hi Parentheses ctermfg=15 cterm=bold
-hi Semicolon   ctermfg=15 cterm=bold
 
-hi MatchParen  ctermfg=15 ctermbg=243
+hi Comment      ctermfg=244
+hi Constant     ctermfg=74
+hi Special      ctermfg=168
+hi Identifier   ctermfg=221 cterm=none
+hi Statement    ctermfg=201 cterm=bold
+hi PreProc      ctermfg=168
+hi Type         ctermfg=69  cterm=italic
+
+hi Operator     ctermfg=197 cterm=bold
+hi Parentheses  ctermfg=15  cterm=bold
+hi Semicolon    ctermfg=15  cterm=bold
+
+hi MatchParen   ctermfg=41  ctermbg=16 cterm=bold
+
+hi Underlined   ctermfg=21
+hi Ignore       ctermfg=237
+hi ErrorMsg     ctermfg=16  ctermbg=160 cterm=italic,bold
+hi Todo         ctermfg=226 ctermbg=none cterm=italic,bold
+
